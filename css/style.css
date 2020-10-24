@@ -988,7 +988,7 @@ border-radius: 4px;
     }
 }
 
-@media (max-width: 760px){
+@media (max-width: 614px){
     .contact .contact-form .form-item ,
     .blog .blog-item,
     .service .service-item,
