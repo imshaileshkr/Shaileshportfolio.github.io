@@ -1,15 +1,15 @@
 .aside .logo a::before{
-    /* border-top: 6px solid #eed54a;
+    /* border-top: 6px solid #ffb400;
     border-left: 6px solid #2320c0; */
-    border-left: 6px solid #ec1839;
-    border-top: 6px solid #ec1839;
+    border-left: 6px solid #ff8800;
+    border-top: 6px solid #ff8800;
 }
 
 .aside .logo a::after{
-    /* border-right: 6px solid #ec1839; */
-    border-right: 6px solid  #eed54a ;
+    /* border-right: 6px solid #ffb400; */
+    border-right: 6px solid  #ff8800 ;
 
-    border-bottom: 6px solid #eed54a;
+    border-bottom: 6px solid #ff8800;
 }
 .contact .contact-info-item h4,
 .contact .contact-info-item .icon .fa,
@@ -17,13 +17,16 @@
 .lightbox .lightbox-control .prev-item,
 .lightbox .lightbox-control .next-item,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
+body.dark .portfolio .portfolio-filter button.active,
 .portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .fa,
 .about .about-content .about-text h3 span,
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
 .aside .nav li a:hover,
 .aside .nav li a.active
 {
-    color: #ec1839;
+    color: #ff8800;
 }
 .blog .blog-item-inner .blog-img .blog-date,
 .service .service-item .service-item-inner:hover .icon,
@@ -37,8 +40,8 @@
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
 .home .intro .social-link a{
-    background-color: #ec1839; ;
+    background-color: #ff8800; ;
 }
 .portfolio .portfolio-filter button.active{
-    border-color: #ec1839;
+    border-color: #ff8800;
 }

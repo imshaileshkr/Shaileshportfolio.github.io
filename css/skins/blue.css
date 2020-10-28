@@ -1,0 +1,48 @@
+.aside .logo a::before{
+    /* border-top: 6px solid #eed54a;
+    border-left: 6px solid #2320c0; */
+    border-left: 6px solid #2196f3;
+    border-top: 6px solid #2196f3;
+}
+
+.aside .logo a::after{
+    /* border-right: 6px solid #2196f3; */
+    border-right: 6px solid  #2196f3 ;
+
+    border-bottom: 6px solid #2196f3;
+}
+.contact .contact-info-item h4,
+.contact .contact-info-item .icon .fa,
+.blog .blog-item-inner .blog-info .blog-tags a,
+.lightbox .lightbox-control .prev-item,
+.lightbox .lightbox-control .next-item,
+.portfolio .portfolio-item .portfolio-info .icon .fa,
+body.dark .portfolio .portfolio-filter button.active,
+.portfolio .portfolio-filter button.active,
+.service .service-item .service-item-inner .fa,
+.about .about-content .about-text h3 span,
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
+.aside .nav li a:hover,
+.aside .nav li a.active
+{
+    color: #2196f3;
+}
+.blog .blog-item-inner .blog-img .blog-date,
+.service .service-item .service-item-inner:hover .icon,
+.about .about-content .timeline .circle-dot,
+.about .about-content .timeline .timeline-item::before,
+.about .about-content .personal-skills .skill-item .progress .progress-in,
+.btn,
+.section-title h2::after,
+.section-title h2::before,
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after,
+.home .intro .social-link a{
+    background-color: #2196f3; ;
+}
+
+.portfolio .portfolio-filter button.active{
+    border-color: #2196f3;
+}

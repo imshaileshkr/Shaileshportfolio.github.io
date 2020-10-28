@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/pink/pink.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/skins/red.css" type="text/css">
+
+    <!-- ************* Live Style Switcher *************** -->
+    <link rel="stylesheet" class="alternate-style" title="red" href="css/skins/red.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style"title="green" href="css/skins/green.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
 </head>
 
 <body>
@@ -26,12 +34,12 @@
             </div>
             <!-- nav -->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i>Blog</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>  
+                <li><a href="#service"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#blog"><i class="fa fa-envelope"></i>Blog</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
             <!-- Copyright -->
             <div class="copyright-text">
@@ -44,7 +52,7 @@
 
             <!-- **************Home Section**************  -->
 
-            <section class="home section hidden">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="img/profile.jpg" alt="profile" class="shadow-dark">
@@ -65,7 +73,7 @@
             <!-- ****************About Section******************* -->
 
 
-            <section class="about section hidden">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -277,7 +285,7 @@
 
 
             <!-- ********************* Service Section Start ************************ -->
-            <section class="service section hidden">
+            <section class="service section" id="service">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -328,7 +336,7 @@
                         <!-- Servise Item -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <div class="icon"> <i class="fa fa-laptop"></i></div>
+                                <div class="icon"><i class="fa fa-laptop"></i></div>
                                 <h4>Web Design</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicinorro eaque
                                     obcaecati magni maiores maxime! Fugiat, exercitationem numquam!</p>
@@ -351,7 +359,7 @@
             <!-- Service Section End -->
 
             <!-- ***************** Portfolio Section ************* -->
-            <section class="portfolio section hidden">
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -463,7 +471,7 @@
             <!-- Portfolio Section End -->
 
             <!-- ********  Blog Section Start ******* -->
-            <section class="blog section hidden">
+            <section class="blog section" id="blog">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -526,8 +534,9 @@
                 </div>
             </section>
             <!-- ***** Blog Section End ******* -->
+
             <!-- ******** Contact Form Start ******* -->
-            <section class="contact section hidden">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -615,8 +624,41 @@
             <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
         </div>
     </div>
+    <!-- Lightbox End -->
+
+    <!-- Live Style Switcher  -->
+    <div class="style-switcher">
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="javascript:void(0);" title="red" style="background-color: #ec1839;" onclick="setActiveStyle('red')"></a></li>
+            <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label class="body-skin-switcher">
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            <span>Light</span> 
+        </label>
+        <label class="body-skin-switcher">
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            <span>Dark</span> 
+        </label>
+        
+    </div>
+    <!-- Live Style Switcher End -->
+
+    
+
+
     <!-- JavaScript src -->
     <script src="js/script.js"></script>
+    <!-- Live Style js src -->
+    <script src="js/styleSwitcher.js"></script>
 </body>
 
 </html>
